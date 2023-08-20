@@ -1,8 +1,33 @@
 {
   "posts": [
     {
-      "title": "hello"
+      "image": "https://i.pinimg.com/564x/0f/2c/48/0f2c48d79d7c6dc083fa99c7350d83c1.jpg",
+      "title": "upd",
+      "desc": "cool place",
+      "favorites": true,
+      "id": 2,
+      "likes": false
+    },
+    {
+      "image": "https://i.pinimg.com/564x/b7/6c/e1/b76ce1ff351392c38a841d5ba3417fa8.jpg",
+      "title": "Beautiful",
+      "desc": "this town is awesome!",
+      "favorites": false,
+      "id": 3
     }
   ],
-  "favorites": []
+  "favorites": [],
+  "likes": [
+    {
+      "id": "like-3",
+      "user": {
+        "image": "de",
+        "title": "cd",
+        "desc": "d",
+        "favorites": false,
+        "id": 3,
+        "likes": true
+      }
+    }
+  ]
 }

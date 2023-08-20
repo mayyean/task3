@@ -1,13 +1,104 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(55, 66, 89);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main__container {
+  width: 87%;
+  margin: 0 auto;
+}
+
+.navbar {
+  height: 9vh;
+  background-color: rgb(223, 204, 251, 0.8);
+  border: 2px solid transparent;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  margin: 1%;
+}
+
+.navbar p :hover {
+  color: darkolivegreen;
+}
+.navbar p {
+  margin: auto;
+}
+
+.post__card {
+  margin-top: 5%;
+  width: 40%;
+  height: 40%;
+  justify-content: center;
+}
+
+.post__image img {
+  max-width: 30%;
+  max-height: 40%;
+}
+
+.post__image {
+  width: 100%;
+  height: 100%;
+  border: transparent solid;
+  border-radius: 15px;
+}
+
+.post__items {
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 1%;
+}
+
+.post__card h4 {
+  margin: 1% 0;
+}
+
+.details__btn,
+.edit__btn,
+.delete__btn {
+  width: 20%;
+  height: 30px;
+  margin-right: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+
+  border: transparent solid;
+  border-radius: 5px;
+  background-color: rgb(223, 204, 251, 0.8);
+}
+
+.posts__container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.panel {
+  margin: 3% auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(223, 204, 251, 0.5);
+}
+.panel input {
+  width: 80%;
+  margin: 2% auto;
+  height: 34px;
+  background-color: rgb(223, 204, 251, 0.8);
+  border: transparent solid;
+  border-radius: 5px;
+}
+.btn {
+  margin: 2% auto;
+  border: transparent solid;
+  border-radius: 5px;
+  background-color: rgb(223, 204, 251, 0.8);
+  width: 25%;
+  height: 35px;
+}
+.panel h2 {
+  margin: 2% auto;
 }

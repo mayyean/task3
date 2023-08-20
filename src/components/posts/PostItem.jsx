@@ -1,16 +1,16 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import PostFavorite from "../favorites/PostFavorite";
+import PostFavorite from "../Favorites/PostFavorite";
 import PostLike from "./PostLike";
 
 const PostItem = ({ post }) => {
   const navigate = useNavigate();
 
   return (
-    <div className="post__item">
-      <div className="post__image">{post.image}</div>
+    <div className="post__card">
+      <img src={post.image} className="post__image" alt="" />
       <div className="post__items">
-        <PostLike />
+        <PostLike post={post} />
         <PostFavorite post={post} />
       </div>
       <h4>{post.title}</h4>

@@ -18,12 +18,12 @@ const PostCreate = () => {
       if (!post[key]) return alert("Some inputs are empty! :(");
     }
 
-    dispatch(createPost({ ...post }));
+    dispatch(createPost({ ...post, favorites: false }));
     navigate("/home");
   }
 
   return (
-    <div className="create__panel">
+    <div className="panel">
       <h2>Add Post</h2>
       <input
         type="url"
@@ -32,7 +32,7 @@ const PostCreate = () => {
         value={post.image}
       />
       <input
-        type="url"
+        type="text"
         placeholder="Title"
         onChange={(e) => setPost({ ...post, title: e.target.value })}
         value={post.title}
@@ -43,7 +43,7 @@ const PostCreate = () => {
         onChange={(e) => setPost({ ...post, desc: e.target.value })}
         value={post.desc}
       />
-      <button className="create__btn" onClick={addPost}>
+      <button className="btn" onClick={addPost}>
         Add
       </button>
     </div>

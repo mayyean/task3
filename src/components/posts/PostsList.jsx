@@ -19,7 +19,7 @@ const PostsList = () => {
           <h4>{error}</h4>
         </div>
       ) : (
-        <div>
+        <div className="posts__container">
           {loading && <h3>Loading...</h3>}
           {posts.map((post) => (
             <PostItem key={post.id} post={post} />
